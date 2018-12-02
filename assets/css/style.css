@@ -1,0 +1,53 @@
+
+body {
+    background-image: url("../../assets/images/qbkls.png");
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+
+}
+
+/* Nav Bar */
+.navbar {
+    height: 84px;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar h1 {
+    float: left;
+    margin: 0;
+    padding: 28px;
+    background-color: #4aaaa5;
+
+}
+
+.navbar ul {
+    float: right;
+    list-style-type: none;
+}
+
+.navbar li {
+    float: right;
+    margin: 8px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #777;
+}
+
+/* About Me*/
+
+.about-me {
+   overflow: hidden;
+   width: 960px; 
+}
+
+.about-me img {
+    float: left;
+}
