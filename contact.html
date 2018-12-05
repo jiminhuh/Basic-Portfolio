@@ -8,40 +8,47 @@
     <title>Jimin Huh Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li>Jimin Huh</li>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="wrapper">
+                    <h1>Jimin Huh</h1>
+                    <ul>
+                        <li><a href="index.html">About Me</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-    <div class="contactForm">
-        <h2>Contact</h2>
-        <hr>
-        <form action="#" id="contactInfo">
-            <label for="fullName">Name</label>
-            <input type="text" name="name" id="fullName" placeholder="John Smith">
-            <br>
+        <section class="contact-form">
+            <h2>Contact</h2>
+            <hr>
+            <form action="#" id="contact-info">
+                <label for="full-name">Name</label>
+                <br>
+                <input type="text" name="name" id="full-name" placeholder="John Smith">
+                <br>
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
-            <br>   
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email" required>
+                <br>   
 
-            <label for="message" id="message">Message</label>
-            <textarea name="message"></textarea>
-            <br>
+                <label for="message" id="message">Message</label>
+                <br>
+                <textarea name="message"></textarea>
+                <br>
 
-            <button type="submit" id="submitBtn">Submit</button>
-        </form>
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+        </section>
     </div>
 
     <footer>
         <p>Copyright &copy;</p>
     </footer>
-
+    
 </body>
 </html>
