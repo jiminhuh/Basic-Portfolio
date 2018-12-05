@@ -5,7 +5,7 @@ html {
 body {
     background-image: url("../../assets/images/qbkls.png");
     margin: 0;
-    height: 100%;
+    height: 100vh;
 }
 
 .wrapper {
@@ -66,6 +66,10 @@ section {
     color: #777;
 }
 
+.navbar a:hover {
+    color: #DA6A3D;
+}
+
 /* About Me*/
 
 .about-me {
@@ -74,6 +78,8 @@ section {
    margin: 28px auto;
    padding-bottom: 4rem;
    border: 0.7px solid #ddd;
+   overflow: auto;
+   clear: both;
    
 }
 .about-me p {
@@ -84,10 +90,10 @@ section {
 
 }
 
-.image-wrap {
-    display: flex;
+.image-wrap img {
+    float: left;
+    margin-right: 10px;
 }
-
 
 .about-me h2 {
     color: #4aaaa5;
@@ -134,34 +140,57 @@ section {
 /* Portfolio */
 .portfolio {
     width: 60%;
-    margin: 0 auto;
+    margin: 10px auto 30px;
     background-color: #fff;
     padding-left: 20px;
+
 }
 
 .portfolio-images img{
     height: 200px;
     width: 250px;
+    margin-right: 50px;
+    margin-bottom: 20px;
 }
 
-.portfolio-images {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
+
+.first-row,
+.second-row,
+.third-row {
+    float: left;
+    position: relative;
 }
 
-.portfolio-image-1 p,
-.portfolio-image-2 p,
-.portfolio-image-3 p,
-.portfolio-image-4 p,
-.portfolio-image-5 p {
+.text-1,
+.text-2,
+.text-3,
+.text-4,
+.text-5 {
+    color: #fff;
+    background-color: #4aaaa5;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.2rem;
+}
+
+
+.text-1,
+.text-3,
+.text-5 {
     position: absolute;
-    width: 50%;
-    height: 50%;
-    transform: translate(-50%, -50%);
+    top: 100px;
+    left: 0px;
+
 }
 
+.text-2,
+.text-4 {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+}
 
 .portfolio hr {
     margin-left: 0;
@@ -214,6 +243,14 @@ hr {
     }
 
     .image-wrap img {
-        justify-content: center;
+        width: 200px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 1007px) {
+    .text-2,
+    .text-4 {
+        left: 0px;
     }
 }
