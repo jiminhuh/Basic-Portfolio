@@ -105,20 +105,23 @@ section {
     border: 0.7px solid #ddd;
 }
 
+
 #contact-info,
 .contact-form h2 {
     padding-left: 0.7rem;
 }
 
-#contact-info input,
-textarea {
+#contact-info input {
     width: 95%;
-    margin: 0.4rem 0;
+    margin: 0.4rem 0px 1rem 0px;
+    height: 24px;
 }
 
 #contact-info textarea {
     resize: none;
-    height: 100px;
+    height: 140px;
+    width: 95%;
+    margin: 0.4rem 0 1rem 0;
 }
 
 #contact-info #submitBtn {
@@ -127,6 +130,44 @@ textarea {
     color: #fff;
     padding: 0.6rem 0.8rem;
 }
+
+/* Portfolio */
+.portfolio {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-left: 20px;
+}
+
+.portfolio-images img{
+    height: 200px;
+    width: 250px;
+}
+
+.portfolio-images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.portfolio-image-1 p,
+.portfolio-image-2 p,
+.portfolio-image-3 p,
+.portfolio-image-4 p,
+.portfolio-image-5 p {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.portfolio hr {
+    margin-left: 0;
+}
+
+
 
 /* Footer*/
 footer {
